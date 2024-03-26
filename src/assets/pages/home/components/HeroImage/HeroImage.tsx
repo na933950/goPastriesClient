@@ -14,10 +14,6 @@ import { BiSolidDownArrow } from "react-icons/bi";
 import Fade from "../../../../globalComponents/Fade/Fade";
 import { Link } from "react-router-dom";
 
-interface BackendData {
-  users: string[]
-}
-
 const HeroImage = () => {
   const [text] = useTypewriter({
     words: ["HOMEMADE", "DELICIOUS", "CUSTOMIZABLE", "MOUTHWATERING", "UNIQUE"],
@@ -36,7 +32,7 @@ const HeroImage = () => {
 
     // Clean up the interval when the component unmounts
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   // Use the heroImageIndex to display the current image
   const currentImage = images[heroImageIndex];
@@ -63,16 +59,6 @@ const HeroImage = () => {
     });
   };
 
-  const [backendData, setBackendData] = useState<BackendData>({ users: [""] });
-
-  useEffect(() => {
-    fetch("/api")
-      .then((response) => response.json())
-      .then((data) => {
-        setBackendData(data);
-      });
-    setBackendData(backendData)
-  }, []);
 
   return (
     <>

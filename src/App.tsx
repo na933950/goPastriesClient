@@ -3,6 +3,7 @@ import Home from "./assets/pages/home/Home";
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { AiOutlineHome, AiOutlineShoppingCart, AiOutlineQuestionCircle } from "react-icons/ai";
 import { BiFoodMenu } from "react-icons/bi";
+import { MdClass } from "react-icons/md";
 import {HiOutlineChatBubbleLeftEllipsis} from "react-icons/hi2";
 
 export const pages = ["Home", "Menu", "Order", "About", "Contact", "Testimonials"];
@@ -27,6 +28,10 @@ export const pageDirectory = {
   "Testimonials": {
     path: "/testimonials",
     icon: <HiOutlineChatBubbleLeftEllipsis />
+  },
+  "Class": {
+    path: "https://docs.google.com/forms/d/e/1FAIpQLSfBi2j18_si3vRGn66bOIMxViVV2u-UeB8IwnfMHH4tkTrhHg/viewform?vc=0&c=0&w=1&flr=0",
+    icon: <MdClass />
   }
 }
 

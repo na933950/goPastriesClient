@@ -6,23 +6,36 @@ import { Link } from "react-router-dom";
 import { scrollToTop } from "../../../../../App";
 
 const AboutSection = () => {
+  // Get the current date
+  const currentDate = new Date();
+
+  // Set the start date to December 2022
+  const startDate = new Date('December 2022');
+
+  // Calculate the difference in months
+  const diffMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12 +
+    (currentDate.getMonth() - startDate.getMonth());
+
+  // Round the difference
+  const roundedMonths = Math.round(diffMonths);
+
   return (
     <div>
       <span className={styles.header}>ABOUT ME</span>
       <Fade>
         <div className={styles.stats}>
-          <Stat className={styles.stat} statValue={8}>
+          <Stat className={styles.stat} statValue={roundedMonths}>
             Months in Business
           </Stat>
           <Stat
             className={styles.stat}
-            statValue={2500}
+            statValue={5000}
             suffix="+"
             duration={3.3}
           >
             Macarons Baked
           </Stat>
-          <Stat className={styles.stat} statValue={160} suffix="+" duration={3}>
+          <Stat className={styles.stat} statValue={250} suffix="+" duration={3}>
             Orders
           </Stat>
         </div>
