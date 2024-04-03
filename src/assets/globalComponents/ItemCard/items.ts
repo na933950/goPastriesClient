@@ -1,16 +1,13 @@
 import {
-  horizontalMacaronStack,
   horizontalMacaronTree,
   horizontalMatchaStack,
   horizontalMacaronCake,
   horizontalChaiCookies,
   horizontalHazelnutCookies,
   horizontalCinnamonRolls,
-  horizontalCupcakes,
   horizontalJarOfHearts,
   horizontalNumberCake,
   horizontalParkerHouseRolls,
-  horizontalSugarCookies,
 } from "../../images/horizontal";
 import {
   verticalMacaron,
@@ -28,7 +25,7 @@ import {
 } from "../../images/vertical";
 
 const IcMacaron = {
-  imgWide: horizontalMacaronStack,
+  imgWide: ["/menu/macarons1.jpg", "/menu/macarons2.jpg", "/menu/macarons3.jpg"],
   imgTall: verticalMacaron,
   category: "macaron",
   title: "Classic Macarons",
@@ -38,7 +35,7 @@ const IcMacaron = {
   formerPrice: "",
 };
 const IcMacaronTree = {
-  imgWide: horizontalMacaronTree,
+  imgWide: [horizontalMacaronTree],
   imgTall: verticalMacaronTree,
   category: "macaron",
   title: "Macaron Tree",
@@ -48,7 +45,7 @@ const IcMacaronTree = {
   formerPrice: "",
 };
 const IcMatcha = {
-  imgWide: horizontalMatchaStack,
+  imgWide: [horizontalMatchaStack],
   imgTall: verticalMatchaStack,
   category: "cookie",
   title: "Matcha Cookies",
@@ -58,7 +55,7 @@ const IcMatcha = {
   formerPrice: "",
 };
 const IcMacaronCake = {
-  imgWide: horizontalMacaronCake,
+  imgWide: [horizontalMacaronCake],
   imgTall: verticalMacaronCake,
   category: "macaron",
   title: "Macaron Cake",
@@ -68,7 +65,7 @@ const IcMacaronCake = {
   formerPrice: "",
 };
 const IcChai = {
-  imgWide: horizontalChaiCookies,
+  imgWide: [horizontalChaiCookies],
   imgTall: verticalChaiCookies,
   category: "cookie",
   title: "Chai Cookies",
@@ -78,7 +75,7 @@ const IcChai = {
   formerPrice: "",
 };
 const IcHazelnut = {
-  imgWide: horizontalHazelnutCookies,
+  imgWide: [horizontalHazelnutCookies],
   imgTall: verticalHazelnutCookies,
   category: "cookie",
   title: "Hazelnut Cookies",
@@ -88,7 +85,7 @@ const IcHazelnut = {
   formerPrice: "",
 };
 const IcCupcake = {
-  imgWide: horizontalCupcakes,
+  imgWide: ["/menu/cupcakes1.jpg", "/menu/cupcakes2.jpg", "/menu/cupcakes3.jpg", "/menu/cupcakes4.jpg"],
   imgTall: verticalCupcakes,
   category: "cupcake",
   title: "Cupcakes",
@@ -97,7 +94,7 @@ const IcCupcake = {
   price: "$42/dozen"
 };
 const IcCinnamonRoll = {
-  imgWide: horizontalCinnamonRolls,
+  imgWide: [horizontalCinnamonRolls],
   imgTall: verticalCinnamonRolls,
   category: "bread",
   title: "Cinnamon Rolls",
@@ -105,17 +102,17 @@ const IcCinnamonRoll = {
     "Pillowy soft single serve rolls topped with cinnamon, made with a tangzhong starter for maximum softness. They are absolutely delicious as a breakfast item or afternoon snack.",
   price: "$42/dozen",
 }
-const IcJarOfHearts = {
-  imgWide: horizontalJarOfHearts,
+const IcJarOfCookies= {
+  imgWide: [horizontalJarOfHearts],
   imgTall: verticalJarOfHearts,
   category: "cookie",
-  title: "Jar of Hearts",
+  title: "Jar of Cookies",
   children:
-    "When one cookie isn't enough or you have someone special in mind, order the romantic spinoff of my normal sugar cookie-- the jar of hearts!",
+    "When one cookie isn't enough or you have someone special in mind, order my spinoff on the regular sugar cookies-- the jar of cookies! Personalize this at Valentine's Day to be a jar of hearts!",
   price: "$30"
 };
 const IcNumberCake = {
-  imgWide: horizontalNumberCake,
+  imgWide: [horizontalNumberCake],
   imgTall: verticalNumberCake,
   category: "macaron",
   title: "Macaron Number Cake",
@@ -124,7 +121,7 @@ const IcNumberCake = {
   price: "$150"
 };
 const IcParkerHouseRoll = {
-  imgWide: horizontalParkerHouseRolls,
+  imgWide: [horizontalParkerHouseRolls],
   imgTall: verticalParkerHouseRoll,
   category: "bread",
   title: "Honey Butter Salted Parker House Rolls",
@@ -134,28 +131,81 @@ const IcParkerHouseRoll = {
   formerPrice: ""
 }
 const IcSugarCookie = {
-  imgWide: horizontalSugarCookies,
+  imgWide: ["/menu/sugar1.jpg", "/menu/sugar2.jpg", "/menu/sugar4.jpg", "/menu/sugar5.jpg", "/menu/sugar6.jpg"],
   imgTall: verticalSugarCookies,
   category: "cookie",
   title: "Sugar Cookie",
   children:
-    "Thick and soft, buttery sugar cookies decorated with a generous layer of royal icing. I offer high customizability with sugar cookies including college logos, graduation, baby, bridal shower, and other themes. Let's discuss how to put your company's logo on a cookie!",
+    "Thick and soft, buttery sugar cookies decorated with a generous layer of royal icing. I offer high customizability with sugar cookies including college logos, graduation, baby, bridal shower, and other themes.",
+  price: "Prices Vary"
+}
+const IcWeddingFavors = {
+  imgWide: ["/menu/weddingfavors1.jpg", "/menu/weddingfavors2.jpg"],
+  imgTall: "/menu/weddingfavors1.jpg",
+  category: "cookie",
+  title: "Wedding Favors",
+  children:
+    "Your choice of specialized pastries to fit the needs of your wonderful day! I've made wedding favors as shown above from macarons to beautiful cookies that will add a touch of sweetness to a any wedding!",
+  price: "Prices Vary"
+}
+const IcLogoCookies = {
+  imgWide: ["/menu/logocookies1.jpg", "/menu/logocookies2.jpg", "/menu/logocookies3.jpg"],
+  imgTall: "/menu/logocookies1.jpg",
+  category: "cookie",
+  title: "Logo Cookies",
+  children:
+    "I am also able to specialize sugar cookies to support businesses, college decisions, and more through logo cookies! Send me the logo of your favorite company, brand, or school and I can put it on a cookie no problem.",
+  price: "Prices Vary"
+}
+
+const IcBridalBabyFavors = {
+  imgWide: ["/menu/bridal1.jpg", "/menu/bridal2.jpg", "/menu/bridal3.jpg"],
+  imgTall: "/menu/bridal1.jpg",
+  category: "cookie",
+  title: "Bridal/Baby Shower Favors",
+  children:
+    "I would love to make baked goods for your bridal or baby shower that are themed to fit your occasion! Above are some of the favors I've done in the past!",
+  price: "Prices Vary"
+}
+
+const IcCupcakeBouqeut = {
+  imgWide: ["/menu/bouquet1.jpg", "/menu/bouquet2.jpg", "/menu/bouquet3.jpg"],
+  imgTall: "/menu/bouquet1.jpg",
+  category: "cupcake",
+  title: "Cupcake Bouquet",
+  children:
+    "If you're feeling a bit more floral, order my cupcake bouquet! I can arrange however many cupcakes you would like into a beautiful bouquet with each cupcake topped with a flower made of icing.",
+  price: "$45/dozen"
+}
+
+const IcAwarenessCookies = {
+  imgWide: ["/menu/awareness1.jpg"],
+  imgTall: "/menu/awareness1.jpg",
+  category: "cookie",
+  title: "Awareness Ribbon Cookies",
+  children:
+    "In support of breast cancer awareness, I baked the above cookies, and am happy to do others to support and raise awareness for valuable causes.",
   price: "Prices Vary"
 }
 
 const allItems = [
   IcMacaron,
   IcSugarCookie,
+  IcCupcake,
+  IcCupcakeBouqeut,
+  IcWeddingFavors,
+  IcBridalBabyFavors,
+  IcLogoCookies,
+  IcAwarenessCookies,
+  IcNumberCake,
   IcMacaronCake,
   IcMacaronTree,
+  IcJarOfCookies,
   IcMatcha,
   IcChai,
   IcHazelnut,
   IcCinnamonRoll,
-  IcCupcake,
-  IcJarOfHearts,
-  IcNumberCake,
-  IcParkerHouseRoll
+  IcParkerHouseRoll,
 ];
 
 export {
@@ -168,8 +218,13 @@ export {
   IcHazelnut,
   IcCinnamonRoll,
   IcCupcake,
-  IcJarOfHearts,
+  IcJarOfCookies,
   IcNumberCake,
   IcParkerHouseRoll,
+  IcWeddingFavors,
+  IcLogoCookies,
+  IcBridalBabyFavors,
+  IcCupcakeBouqeut,
+  IcAwarenessCookies,
   allItems,
 };

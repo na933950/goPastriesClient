@@ -5,7 +5,7 @@ import Fade from "../Fade/Fade";
 import { Link } from "react-router-dom";
 
 export interface IcProps {
-  imgWide: string;
+  imgWide: string[];
   imgTall: string;
   category: string;
   title: string;
@@ -44,6 +44,17 @@ const ItemCard = ({
   }, []);
 
   const itemCardRef = React.useRef<HTMLDivElement>(null);
+  const [currImg, setCurrImg] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrImg((currImg + 1) % imgWide.length);
+    }, 5000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [imgWide.length, currImg])
 
   // Calculate the appropriate grid template class based on the cardWidth
   const breakpoint = 750;
@@ -57,7 +68,7 @@ const ItemCard = ({
         className={`${styles.product} ${gridTemplateClass}`}
       >
         <picture className={styles.productImg}>
-          <img src={cardWidth < breakpoint ? imgWide : imgTall} alt="" />
+          <img src={cardWidth < breakpoint ? imgWide[currImg] : imgTall} alt="" />
         </picture>
         <div className={styles.productContent}>
           <span className={styles.category}>{category}</span>
