@@ -8,6 +8,7 @@ import {
   horizontalJarOfHearts,
   horizontalNumberCake,
   horizontalParkerHouseRolls,
+  horizontalMacaronStack,
 } from "../../images/horizontal";
 import {
   verticalMacaron,
@@ -25,7 +26,7 @@ import {
 } from "../../images/vertical";
 
 const IcMacaron = {
-  imgWide: ["/menu/macarons1.jpg", "/menu/macarons2.jpg", "/menu/macarons3.jpg"],
+  imgWide: [horizontalMacaronStack],
   imgTall: verticalMacaron,
   category: "macaron",
   title: "Classic Macarons",
