@@ -22,7 +22,7 @@ const AboutSection = () => {
   return (
     <div>
       <span className={styles.header}>ABOUT ME</span>
-      <Fade>
+      {/* <Fade>
         <div className={styles.stats}>
           <Stat className={styles.stat} statValue={roundedMonths}>
             Months in Business
@@ -39,7 +39,7 @@ const AboutSection = () => {
             Orders
           </Stat>
         </div>
-      </Fade>
+      </Fade> */}
       <div className={styles.textContainer}>
         <div className={styles.textWrapper}>
           <Fade>
