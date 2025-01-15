@@ -1,5 +1,5 @@
 import styles from "./AboutSection.module.css";
-import Stat from "../Stat";
+// import Stat from "../Stat";
 import Fade from "../../../../globalComponents/Fade/Fade";
 import Tilt from "react-parallax-tilt";
 import { Link } from "react-router-dom";
@@ -7,17 +7,17 @@ import { scrollToTop } from "../../../../../App";
 
 const AboutSection = () => {
   // Get the current date
-  const currentDate = new Date();
+  // const currentDate = new Date();
 
-  // Set the start date to December 2022
-  const startDate = new Date('December 2022');
+  // // Set the start date to December 2022
+  // const startDate = new Date('December 2022');
 
   // Calculate the difference in months
-  const diffMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12 +
-    (currentDate.getMonth() - startDate.getMonth());
+  // const diffMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12 +
+  //   (currentDate.getMonth() - startDate.getMonth());
 
   // Round the difference
-  const roundedMonths = Math.round(diffMonths);
+  //const roundedMonths = Math.round(diffMonths);
 
   return (
     <div>
